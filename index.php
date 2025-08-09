@@ -14,14 +14,22 @@ switch ($method){
 
     case 'GET':
         $userController->getUsers();
-        break;
+        break; 
     
     case 'POST':
         $userController->createUser();
         break;
 
+    case 'PUT';
+        $userController->updateUser();
+        break;
+        
+    case 'DELETE';
+        $userController->deleteUser();
+        break;
+
     default:
-    //
+   
         echo json_encode(["message" => "Method not allowed"]);
         break;
 }

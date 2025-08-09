@@ -5,6 +5,7 @@ namespace Model;
 use PDO;
 use PDOException;
 
+require_once __DIR__ . '/../Config/configuration.php';
 class Connection
 {
     public static function getConnection()
